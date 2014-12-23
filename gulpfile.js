@@ -27,7 +27,7 @@ var jsFiles = [
 ];
 
 gulp.task('inject', function() {
-  gulp.src('./index.html')
+  return gulp.src('./index.html')
     .pipe(inject(gulp.src(jsFiles)))
     .pipe(gulp.dest('./'));
 });
@@ -37,14 +37,15 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('js', ['clean'], function() {
-  gulp.src(jsFiles)
+  return gulp.src(jsFiles)
+    .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(rev())
     .pipe(gulp.dest('assets/'));
 });
 
-gulp.task('inject-min', function() {
-  gulp.src('./index.html')
+gulp.task('inject-min', ['js'], function() {
+  return gulp.src('./index.html')
     .pipe(inject(gulp.src('assets/*.js')))
     .pipe(gulp.dest('./'));
 });
