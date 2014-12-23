@@ -8,6 +8,19 @@ var minifyHTML = require('gulp-minify-html');
 var rev = require('gulp-rev');
 var rimraf = require('rimraf');
 
+var cssFiles = [
+  '_layout/css/fontawesome/font-awesome.min.css',
+  '_layout/css/iconfontcustom/icon-font-custom.css',
+  '_layout/css/base.css',
+  '_layout/css/grid.css',
+  '_layout/css/elements.css',
+  '_layout/css/layout.css',
+  '_layout/js/revolutionslider/css/settings.css',
+  '_layout/js/revolutionslider/css/custom.css',
+  '_layout/js/bxslider/jquery.bxslider.css',
+  '_layout/js/animations/animate.min.css'
+];
+
 var jsFiles = [
   '_layout/js/jquery-2.1.1.min.js',
   '_layout/js/viewport/jquery.viewport.js',
@@ -28,12 +41,21 @@ var jsFiles = [
 
 gulp.task('inject', function() {
   return gulp.src('./index.html')
+    .pipe(inject(gulp.src(cssFiles)))
     .pipe(inject(gulp.src(jsFiles)))
     .pipe(gulp.dest('./'));
 });
 
 gulp.task('clean', function(cb) {
   rimraf('assets/', cb);
+});
+
+gulp.task('css', ['clean'], function() {
+  return gulp.src(cssFiles)
+    .pipe(minifyCSS())
+    .pipe(concat('app.css'))
+    .pipe(rev())
+    .pipe(gulp.dest('assets/'));
 });
 
 gulp.task('js', ['clean'], function() {
@@ -44,9 +66,9 @@ gulp.task('js', ['clean'], function() {
     .pipe(gulp.dest('assets/'));
 });
 
-gulp.task('inject-min', ['js'], function() {
+gulp.task('inject-min', ['css', 'js'], function() {
   return gulp.src('./index.html')
-    .pipe(inject(gulp.src('assets/*.js')))
+    .pipe(inject(gulp.src('assets/*')))
     .pipe(gulp.dest('./'));
 });
 
