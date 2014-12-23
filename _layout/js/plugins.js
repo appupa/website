@@ -8,71 +8,12 @@
 
   $(document).ready(function() {
 
-    // twitterFetcher
-    // http://jasonmayes.com/projects/twitterApi/
-
-    if (typeof twitterFetcher !== 'undefined' && ($('.ewf_widget_latest_tweets').length > 0)) {
-
-      $('.ewf_widget_latest_tweets').each(function(index) {
-
-        var account_id = $('.ewf-tweet-list', this).attr('data-account-id'),
-          items = $('.ewf-tweet-list', this).attr('data-items'),
-          newID = 'ewf-tweet-list-' + index;
-
-        $('.ewf-tweet-list', this).attr('id', newID);
-
-        var config = {
-          "id": account_id,
-          "domId": newID,
-          "maxTweets": items
-        };
-
-        twitterFetcher.fetch(config);
-      });
-
-    }
-
-    // Youtube video background
-    // https://github.com/pupunzi/jquery.mb.YTPlayer
-
-    if (typeof $.fn.mb_YTPlayer !== 'undefined') {
-
-      $('.player').mb_YTPlayer();
-
-    }
-
     // simplePlaceholder - polyfill for mimicking the HTML5 placeholder attribute using jQuery
     // https://github.com/marcgg/Simple-Placeholder/blob/master/README.md
 
     if (typeof $.fn.simplePlaceholder !== 'undefined') {
 
       $('input[placeholder], textarea[placeholder]').simplePlaceholder();
-
-    }
-
-    // Fitvids - fluid width video embeds
-    // https://github.com/davatron5000/FitVids.js/blob/master/README.md
-
-    if (typeof $.fn.fitVids !== 'undefined') {
-
-      $('.fitvids').fitVids();
-
-    }
-
-    // Superfish - enhance pure CSS drop-down menus
-    // http://users.tpg.com.au/j_birch/plugins/superfish/options/
-
-    if (typeof $.fn.superfish !== 'undefined') {
-
-      $('#menu').superfish({
-        delay: 500,
-        animation: {
-          opacity: 'show',
-          height: 'show'
-        },
-        speed: 100,
-        cssArrows: true
-      });
 
     }
 
@@ -226,35 +167,6 @@
         autoHover: true, // Auto show will pause when mouse hovers over slider
         useCSS: false // If true, CSS transitions will be used for animations. False, jQuery animations. Setting to false fixes problem with jQuery 2.1.0 and mode:horizontal
       });
-
-    }
-
-    // Magnific PopUp - responsive lightbox
-    // http://dimsemenov.com/plugins/magnific-popup/documentation.html
-
-    if (typeof $.fn.magnificPopup !== 'undefined') {
-
-      $('.magnificPopup').magnificPopup({
-        disableOn: 400,
-        closeOnContentClick: true,
-        type: 'image'
-      });
-
-      $('.magnificPopup-gallery').magnificPopup({
-        disableOn: 400,
-        type: 'image',
-        gallery: {
-          enabled: true
-        }
-      });
-
-      $('.magnificPopup-project').magnificPopup({
-        type: 'ajax',
-        closeOnContentClick: true,
-        gallery: {
-          enabled: true
-        }
-      })
 
     }
 
