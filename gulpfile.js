@@ -38,6 +38,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('js', ['clean'], function() {
   gulp.src(jsFiles)
+    .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(rev())
     .pipe(gulp.dest('assets/'));
