@@ -275,52 +275,6 @@
 
     }
 
-    // gMap -  embed Google Maps into your website; uses Google Maps v3
-    // http://labs.mario.ec/jquery-gmap/
-
-    if (typeof $.fn.gMap !== 'undefined') {
-
-      $('.google-map').each(function() {
-
-        var $t = $(this),
-          mapZoom = parseInt($t.attr("data-zoom"), 10),
-          mapAddress = $t.attr("data-address"),
-          mapCaption = $t.attr("data-caption"),
-          mapType = "ROADMAP",
-          popUp = false;
-
-        if ($t.attr("data-maptype") !== undefined) {
-          mapType = $t.attr("data-maptype");
-        }
-
-        if ($t.attr("data-popup") !== undefined) {
-          popUp = $t.attr("data-popup");
-        }
-
-        $t.gMap({
-          maptype: mapType,
-          scrollwheel: false,
-          zoom: mapZoom,
-          markers: [{
-            address: mapAddress,
-            html: mapCaption,
-            popup: popUp
-          }],
-          controls: {
-            panControl: true,
-            zoomControl: true,
-            mapTypeControl: true,
-            scaleControl: false,
-            streetViewControl: false,
-            overviewMapControl: false
-          }
-        });
-
-      });
-
-    }
-    //
-
     // scrollspy
     if (typeof $.fn.scrollspy != 'undefined') {
 
