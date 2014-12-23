@@ -529,7 +529,7 @@
       var hash = window.location.hash;
 
       $(".loader-img").delay(500).fadeOut();
-      $("#page-loader").delay(1000).fadeOut("slow");
+      $("#page-loader").delay(100).fadeOut("slow");
 
       if (!hash) {
         // Do nothing //
