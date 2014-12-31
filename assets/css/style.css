@@ -1,21 +1,5 @@
 /*------------------------------------------------------------------
-[Studio Themes]
-
-Project:	Hattan
-Version:	1.0
-Last change:	01/09/2014
-
-
-Info about LESS:
-
-Use this file to edit theme styles. LESS is easy.
-
-Helpful links:
-LESS tutorial: http://lesscss.org/
-LESS Windows Compiler: http://winless.org/
-
-
-
+APPUPA
 1. Default Settings
 2. Home
 3. Menus
@@ -200,7 +184,7 @@ strong {
   background-color: #787878 !important;
 }
 .bg-6 {
-  background-color: #fc4949 !important;
+  background-color: #e74c3c !important;
 }
 .color-1 {
   color: #fff;
@@ -223,7 +207,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #fc4949;
+  color: #e74c3c;
 }
 a:hover,
 a:active,
@@ -302,7 +286,7 @@ img {
 }
 blockquote {
   padding-left: 30px;
-  border-left: 2px solid #fc4949;
+  border-left: 2px solid #e74c3c;
   margin: 25px 0;
 }
 /*------------------------------------------------------------------
@@ -311,7 +295,7 @@ blockquote {
 #home {
   width: 100%;
   height: 100%;
-  background-image: url(../img/1700x1100.gif);
+  background-image: url(../img/desktop.jpeg);
   color: #fff;
 }
 #home h1,
@@ -471,7 +455,7 @@ h2.highlight {
 }
 .rev .tp-leftarrow.default:hover,
 .rev .tp-rightarrow.default:hover {
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .rev .tp-leftarrow.default {
   left: 0px !important;
@@ -610,9 +594,10 @@ h2.highlight {
 }
 #logo img {
   max-height: 70px;
+  padding:15px 0px;
 }
 .current_menu_item > a {
-  color: #fc4949 !important;
+  color: #e74c3c !important;
 }
 #main-menu .desktop-menu > .menu-container {
   float: right;
@@ -645,7 +630,7 @@ h2.highlight {
 }
 #main-menu .desktop-menu > .menu-container > ul > li > a:hover,
 #main-menu .desktop-menu > .menu-container > ul > li.active > a {
-  color: #fc4949;
+  color: #e74c3c;
 }
 #main-menu .desktop-menu > .menu-container > ul > li .sub-menu {
   display: none;
@@ -856,7 +841,7 @@ h2.highlight {
   padding-left: 20px;
 }
 #mobile-menu .menu-container ul > li a:hover {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .menu-type-2 #mobile-menu .menu-container > ul > li,
 .menu-type-3 #mobile-menu .menu-container > ul > li {
@@ -892,11 +877,11 @@ h2.highlight {
   font-size: 11px;
 }
 #side-menu > ul > li > a:hover {
-  color: #fc4949;
+  color: #e74c3c;
 }
 #side-menu > ul .active > a,
 #side-menu > ul .current_menu_item > a {
-  color: #fc4949 !important;
+  color: #e74c3c !important;
 }
 #side-menu footer {
   position: absolute;
@@ -927,7 +912,7 @@ h2.highlight {
   padding: 160px 0 !important;
 }
 #countdown {
-  background-image: url(../img/1700x1100.gif);
+  background-image: url(../img/wood.jpg);
   padding: 130px 0 100px;
 }
 #countdown-2 {
@@ -1241,7 +1226,7 @@ h2.highlight {
   font-size: 15px;
 }
 .progress-bar-highlighted .bar-fill {
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .contact-info-2 {
   text-align: center;
@@ -1291,7 +1276,7 @@ h2.highlight {
 }
 .testimonials .bx-pager-item .active,
 .testimonials .bx-pager-item a:hover {
-  background-color: #fc4949 !important;
+  background-color: #e74c3c !important;
 }
 .testimonials.white {
   color: #fff;
@@ -1341,15 +1326,15 @@ h2.highlight {
   color: #fff;
 }
 .pricing-table-1 li:last-child a:hover {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   color: #292929;
 }
 .pricing-highlighted li:last-child a {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   color: #292929;
 }
 .pricing-highlighted li:first-child {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   color: #292929;
 }
 .rslides {
@@ -1474,7 +1459,7 @@ h2.highlight {
   float: left;
   width: 25%;
   text-align: center;
-  padding: 75px;
+  padding: 50px;
 }
 .right-b {
   border-right: 1px solid #eee;
@@ -1524,7 +1509,7 @@ h2.highlight {
 }
 .contactform-2 input.error,
 .contactform-2 textarea.error {
-  border-color: #fc4949 !important;
+  border-color: #e74c3c !important;
 }
 #success-message,
 #error-message {
@@ -1582,14 +1567,14 @@ h2.highlight {
   transition: all 0.3s;
 }
 .contact-info-3:hover i {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .button-1 {
   color: #fff;
   display: inline-block;
   cursor: pointer;
   padding: 10px 20px;
-  background-color: #fc4949;
+  background-color: #e74c3c;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1623,7 +1608,7 @@ h2.highlight {
   transition: all 0.3s;
 }
 .button-2:hover {
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .button-3 {
   padding: 10px 40px;
@@ -1660,8 +1645,8 @@ h2.highlight {
   -moz-border-radius: 50%;
 }
 .social-3:hover {
-  border-color: #fc4949;
-  color: #fc4949;
+  border-color: #e74c3c;
+  color: #e74c3c;
 }
 .countdown.white {
   color: #fff !important;
@@ -1686,7 +1671,7 @@ h2.highlight {
 }
 .countdown-2 i,
 .countdown-3 i {
-  color: #fc4949;
+  color: #e74c3c;
   font-size: 60px;
 }
 .countdown-2 span,
@@ -1745,7 +1730,7 @@ h2.highlight {
   width: 100%;
   height: 100%;
   font-size: 12px;
-  color: #676666;
+  color: #bdc3c7;
   background-color: #292929;
   top: 100%;
   text-align: left;
@@ -1777,10 +1762,10 @@ h2.highlight {
   top: -30px;
 }
 .team-member:hover h6 {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .team-member-2 .team-info {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   height: 50px;
   text-align: center;
   bottom: -50px;
@@ -1847,11 +1832,11 @@ h2.highlight {
   transition: all 0.3s;
 }
 .section .container:hover .heading-light {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .section .container:hover .divider-1 {
   width: 140px;
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .infobox-1 {
   position: relative;
@@ -1880,10 +1865,10 @@ h2.highlight {
   transition: all 0.3s;
 }
 .infobox-1:hover i {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .infobox-1:hover header * {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .flip-container {
   perspective: 1000;
@@ -1938,7 +1923,7 @@ h2.highlight {
   margin-bottom: 0;
 }
 .front i {
-  color: #fc4949;
+  color: #e74c3c;
   font-size: 32px;
 }
 .back {
@@ -1984,7 +1969,7 @@ h2.highlight {
 }
 .infobox-2 i {
   font-size: 32px;
-  color: #fc4949;
+  color: #e74c3c;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2031,7 +2016,7 @@ h2.highlight {
   margin-top: 20px;
 }
 .infobox-3 i {
-  color: #fc4949;
+  color: #e74c3c;
   font-size: 40px;
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
@@ -2215,10 +2200,10 @@ h2.highlight {
   color: inherit !important;
 }
 .infobox-7.white i {
-  color: #fc4949 !important;
+  color: #e74c3c !important;
 }
 .infobox-7:hover i {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   color: #fff;
 }
 .cd-timeline {
@@ -2425,7 +2410,7 @@ h2.highlight {
   content: "" !important;
 }
 #portfolio-container .current-category a {
-  color: #fc4949 !important;
+  color: #e74c3c !important;
 }
 .color img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale") !important;
@@ -2472,8 +2457,8 @@ h2.highlight {
 .portfolio-type-2 .current-category a,
 .portfolio-type-3 .current-category a,
 .portfolio-type-4 .current-category a {
-  color: #fc4949 !important;
-  border-color: #fc4949 !important;
+  color: #e74c3c !important;
+  border-color: #e74c3c !important;
 }
 .portfolio-type-2 .item,
 .portfolio-type-3 .item,
@@ -2541,7 +2526,7 @@ h2.highlight {
 .portfolio-type-2 .item:hover .portfolio-info-2,
 .portfolio-type-3 .item:hover .portfolio-info-2,
 .portfolio-type-4 .item:hover .portfolio-info-2 {
-  background-color: #fc4949;
+  background-color: #e74c3c;
   color: #fff !important;
 }
 .portfolio-type-2 .item:hover .portfolio-info-2 *,
@@ -2603,7 +2588,7 @@ h2.highlight {
   padding: 10px 20px;
   position: absolute;
   bottom: 0;
-  background-color: #fc4949;
+  background-color: #e74c3c;
   z-index: 10;
   color: #fff;
   text-align: left;
@@ -2660,7 +2645,7 @@ h2.highlight {
 }
 #portfolio-description a {
   text-decoration: none;
-  color: #fc4949;
+  color: #e74c3c;
 }
 #portfolio-nav {
   color: #292929;
@@ -2700,7 +2685,7 @@ h2.highlight {
 }
 .portfolio-slideshow .rslides_nav:hover,
 .post-slideshow .rslides_nav:hover {
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .portfolio-slideshow .rslides_nav.prev,
 .post-slideshow .rslides_nav.prev {
@@ -2728,7 +2713,7 @@ h2.highlight {
   transition: all 0.3s;
 }
 #post-nav a:hover {
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 #portfolio-subpage {
   padding: 110px 0;
@@ -2863,7 +2848,7 @@ h2.highlight {
 }
 #sidebar .tagcloud a:hover {
   color: #fff;
-  background-color: #fc4949;
+  background-color: #e74c3c;
 }
 .post {
   position: relative;
@@ -2931,7 +2916,7 @@ h2.highlight {
   background-color: #f1f0f0;
 }
 #tags-footer a {
-  color: #fc4949;
+  color: #e74c3c;
 }
 section#comments {
   padding-left: 100px;
@@ -2956,7 +2941,7 @@ section#comments {
   margin-bottom: 40px;
 }
 .comment .comment-reply-link:hover {
-  color: #fc4949;
+  color: #e74c3c;
 }
 .comment .comment-body:before {
   content: '\f0d9';
