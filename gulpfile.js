@@ -27,8 +27,8 @@ gulp.task('dist-index', ['clean'], function() {
 
   return gulp.src('index.html')
     .pipe(assets)
-    //.pipe(gulpif('*.js', uglify()))
-    //.pipe(gulpif('*.css', minifyCss()))
+    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulpif('*.css', minifyCss()))
     .pipe(rev())
     .pipe(assets.restore())
     .pipe(useref())
@@ -42,7 +42,7 @@ gulp.task('dist-index', ['clean'], function() {
 
 gulp.task('dist', ['copy', 'dist-index'], function() {});
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['dist'], function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
