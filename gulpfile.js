@@ -14,8 +14,15 @@ gulp.task('clean', function(cb) {
   rimraf('./dist/', cb);
 });
 
+gulp.task('copy-repo', ['clean'], function() {
+  return gulp.src('repo/**/*', {
+      base: './repo'
+    })
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('copy', ['clean'], function() {
-  var sources = ['CNAME', 'projects/**/*', 'assets/**/*', 'rs-plugin/**/*'];
+  var sources = ['projects/**/*', 'assets/**/*', 'rs-plugin/**/*'];
   return gulp.src(sources, {
       base: './'
     })
@@ -40,7 +47,7 @@ gulp.task('dist-index', ['clean'], function() {
 
 });
 
-gulp.task('dist', ['copy', 'dist-index'], function() {});
+gulp.task('dist', ['copy', 'copy-repo', 'dist-index'], function() {});
 
 gulp.task('deploy', ['dist'], function() {
   return gulp.src('./dist/**/*')
