@@ -15,7 +15,7 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('copy', ['clean'], function() {
-  var sources = ['projects/**/*', 'assets/**/*', 'rs-plugin/**/*'];
+  var sources = ['CNAME', 'projects/**/*', 'assets/**/*', 'rs-plugin/**/*'];
   return gulp.src(sources, {
       base: './'
     })
