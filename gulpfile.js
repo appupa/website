@@ -2,6 +2,7 @@ var gulp = require('gulp');
 
 var ghPages = require('gulp-gh-pages');
 var gulpif = require('gulp-if');
+var imagemin = require('gulp-imagemin');
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
 var rev = require('gulp-rev');
@@ -26,6 +27,12 @@ gulp.task('copy', ['clean'], function() {
   return gulp.src(sources, {
       base: './'
     })
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }]
+    }))
     .pipe(gulp.dest('dist'));
 });
 
