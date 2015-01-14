@@ -59,6 +59,7 @@ gulp.task('dist', ['copy', 'copy-repo', 'dist-index'], function() {});
 gulp.task('deploy', ['dist'], function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
+      remoteUrl: 'git@github.com:appupa/appupa.github.io.git',
       origin: 'git@github.com:appupa/appupa.github.io.git',
       branch: 'master'
     }));
