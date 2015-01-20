@@ -2402,13 +2402,13 @@ h2.highlight {
 #portfolio-container > nav li a {
   text-decoration: none;
 }
-#portfolio-container > nav li:after {
+
+/* changed to .slash so the 3rd list item would not create a space underneath iteself */
+.slash:after {
   content: "/";
   margin: 0 10px;
 }
-#portfolio-container > nav li:last-child:after {
-  content: "" !important;
-}
+
 #portfolio-container .current-category a {
   color: #e74c3c !important;
 }
