@@ -396,6 +396,15 @@ h2.highlight {
   border: 2px solid #fff;
   display: inline-block;
   margin-top: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#header-title-1 h2:hover {
+  color: #E74C3C;
+  border-color: #E74C3C;
 }
 #header-title-2 h3 {
   font-weight: 400 !important;
