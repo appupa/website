@@ -922,14 +922,6 @@ h2.highlight {
   background-image: url(../img/1700x1100.gif);
   padding: 160px 0 !important;
 }
-#countdown {
-  background-color: #5F9EA0;
-  padding: 130px 0 100px;
-}
-#countdown-2 {
-  background-image: url(../img/1700x1100.gif);
-  padding: 130px 0 100px;
-}
 #portfolio-2 {
   padding: 100px 0 !important;
 }
@@ -979,9 +971,6 @@ h2.highlight {
 }
 #infoboxes {
   padding: 130px 0 50px !important;
-}
-#countdown-3 {
-  padding: 0 !important;
 }
 #portfolio-4 {
   padding: 130px 0 0 !important;
@@ -1658,41 +1647,6 @@ h2.highlight {
 .social-3:hover {
   border-color: #e74c3c;
   color: #e74c3c;
-}
-.countdown.white {
-  color: #fff !important;
-}
-.countdown {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.countdown span {
-  display: block;
-  margin-bottom: 30px;
-  font-size: 36px;
-  font-weight: 600;
-}
-.countdown p {
-  margin-bottom: 0 !important;
-  font-weight: 400 !important;
-}
-.countdown-2,
-.countdown-3 {
-  color: #292929;
-}
-.countdown-2 i,
-.countdown-3 i {
-  color: #e74c3c;
-  font-size: 60px;
-}
-.countdown-2 span,
-.countdown-3 span {
-  margin: 40px 0 30px !important;
-  font-size: 45px;
-  font-weight: 700;
-}
-.white.countdown-3 i {
-  color: #fff !important;
 }
 .team-member,
 .team-member-2 {
