@@ -400,11 +400,6 @@ h2.highlight {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  cursor: pointer;
-}
-#header-title-1 h2:hover {
-  color: #E74C3C;
-  border-color: #E74C3C;
 }
 #header-title-2 h3 {
   font-weight: 400 !important;
@@ -1538,6 +1533,9 @@ h2.highlight {
 .contact-info-1 a {
   text-decoration: none;
 }
+.contact-info-1 a:hover {
+  color: #fff;
+}
 .clients-slider img {
   margin: auto;
 }
@@ -1594,10 +1592,6 @@ h2.highlight {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.button-1:hover {
-  color: #676666;
-  background-color: #fff;
 }
 .button-2 {
   color: #fff;
@@ -1770,9 +1764,6 @@ h2.highlight {
 .team-member:hover img {
   top: -30px;
 }
-.team-member:hover h6 {
-  color: #e74c3c;
-}
 .team-member-2 .team-info {
   background-color: #e74c3c;
   height: 50px;
@@ -1808,16 +1799,6 @@ h2.highlight {
   -webkit-filter: grayscale(0%);
   top: -15px;
 }
-.divider-1 {
-  width: 85px;
-  height: 1px;
-  background-color: #f1f0f0;
-  margin: 45px 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 .divider-2 {
   height: 1px;
   background-color: #f1f0f0;
@@ -1839,9 +1820,6 @@ h2.highlight {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.section .container:hover .heading-light {
-  color: #e74c3c;
 }
 .section .container:hover .divider-1 {
   width: 140px;
@@ -1872,13 +1850,7 @@ h2.highlight {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-.infobox-1:hover i {
-  color: #e74c3c;
-}
-.infobox-1:hover header * {
-  color: #e74c3c;
-}
+}d
 .flip-container {
   perspective: 1000;
   -webkit-perspective: 1000;
