@@ -13,6 +13,7 @@ APPUPA
 /*------------------------------------------------------------------
 [1. Default Settings]
 ------------------------------------------------------------------*/
+
 .col-3 {
   width: 25%;
   padding: 75px;
@@ -158,6 +159,9 @@ strong {
 .gap-1 {
   padding: 130px 0;
 }
+.gap-bottom {
+  padding-bottom: 130px;
+}
 .mask:after {
   background: url(../img/mask.svg) repeat scroll center bottom / cover rgba(0, 0, 0, 0);
   bottom: -20px;
@@ -292,6 +296,7 @@ blockquote {
 /*------------------------------------------------------------------
 [2. Home
 ------------------------------------------------------------------*/
+
 #home {
   width: 100%;
   height: 100%;
@@ -553,6 +558,7 @@ h2.highlight {
 /*------------------------------------------------------------------
 [3. Menus]
 ------------------------------------------------------------------*/
+
 #main-menu {
   height: 70px;
   border-bottom: 1px solid #eee;
@@ -598,7 +604,7 @@ h2.highlight {
 }
 #logo img {
   max-height: 70px;
-  padding:15px 0px;
+  padding: 15px 0px;
 }
 .current_menu_item > a {
   color: #e74c3c !important;
@@ -704,8 +710,8 @@ h2.highlight {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(80));
-  filter: alpha(opacity = (80));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(80));
+  filter: alpha(opacity (80));
 }
 .menu-type-2 .desktop-menu > .menu-container .social-menu {
   margin: 0 0 0 20px !important;
@@ -763,8 +769,8 @@ h2.highlight {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -khtml-opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(80));
-  filter: alpha(opacity = (80));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(80));
+  filter: alpha(opacity (80));
 }
 .menu-type-3 .desktop-menu > .menu-container .social-menu {
   margin: 0 0 0 20px !important;
@@ -896,6 +902,7 @@ h2.highlight {
 /*------------------------------------------------------------------
 [4. Sections]
 ------------------------------------------------------------------*/
+
 #services {
   padding: 130px 0 50px !important;
 }
@@ -989,6 +996,7 @@ h2.highlight {
 /*------------------------------------------------------------------
 [5. Shortcodes]
 ------------------------------------------------------------------*/
+
 .form-1 textarea {
   width: 100%;
   clear: both;
@@ -1055,18 +1063,18 @@ h2.highlight {
   position: relative;
   top: -5px;
 }
-.mailing-box ::-webkit-input-placeholder {
+.mailing-box::-webkit-input-placeholder {
   color: #fff;
 }
-.mailing-box :-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-.mailing-box ::-moz-placeholder {
+.mailing-box:-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-.mailing-box :-ms-input-placeholder {
+.mailing-box::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.mailing-box:-ms-input-placeholder {
   color: #fff;
 }
 .mailing-box input[type="submit"]:hover {
@@ -1775,10 +1783,13 @@ h2.highlight {
 .team-member-2 img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
+  
   filter: gray;
   /* IE6-9 */
+  
   -webkit-filter: grayscale(100%);
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1850,8 +1861,8 @@ h2.highlight {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}d
-.flip-container {
+}
+d .flip-container {
   perspective: 1000;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -1982,8 +1993,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
 }
 .infobox-3 {
   text-align: center;
@@ -2065,8 +2076,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
   left: -35px;
   top: -35px;
 }
@@ -2077,8 +2088,8 @@ h2.highlight {
   opacity: 100;
   -moz-opacity: 100;
   -khtml-opacity: 100;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(10000));
-  filter: alpha(opacity = (10000));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(10000));
+  filter: alpha(opacity (10000));
   left: -35px;
   top: -35px;
   transform: scale(1);
@@ -2281,6 +2292,7 @@ h2.highlight {
     left: 50%;
     margin-left: -12px;
     /* Force Hardware Acceleration in WebKit */
+    
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
@@ -2371,6 +2383,7 @@ h2.highlight {
 /*------------------------------------------------------------------
 [6. Portfolio]
 ------------------------------------------------------------------*/
+
 #portfolio-container > nav {
   margin-bottom: 35px;
   font-size: 12px;
@@ -2383,13 +2396,12 @@ h2.highlight {
 #portfolio-container > nav li a {
   text-decoration: none;
 }
-
 /* changed to .slash so the 3rd list item would not create a space underneath iteself */
+
 .slash:after {
   content: "/";
   margin: 0 10px;
 }
-
 #portfolio-container .current-category a {
   color: #e74c3c !important;
 }
@@ -2401,8 +2413,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2451,10 +2463,13 @@ h2.highlight {
 .portfolio-type-4 .item img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
+  
   filter: gray;
   /* IE6-9 */
+  
   -webkit-filter: grayscale(100%);
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2462,8 +2477,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
 }
 .portfolio-type-2 .item .portfolio-info-2,
 .portfolio-type-3 .item .portfolio-info-2,
@@ -2477,8 +2492,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
 }
 .portfolio-type-2 .item .portfolio-info-2 h4,
 .portfolio-type-3 .item .portfolio-info-2 h4,
@@ -2527,8 +2542,8 @@ h2.highlight {
   opacity: 100 !important;
   -moz-opacity: 100 !important;
   -khtml-opacity: 100 !important;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(10000)) !important;
-  filter: alpha(opacity = (10000)) !important;
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(10000)) !important;
+  filter: alpha(opacity (10000)) !important;
 }
 .portfolio-type-3 .item img {
   top: -15px;
@@ -2605,8 +2620,8 @@ h2.highlight {
   opacity: 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0));
-  filter: alpha(opacity = (0));
+  -ms-filter: progid: DXImageTransform.Microsoft.Alpha(opacity=(0));
+  filter: alpha(opacity (0));
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2736,6 +2751,7 @@ h2.highlight {
 /*------------------------------------------------------------------
 [9. Blog & Widgets]
 ------------------------------------------------------------------*/
+
 #header-blog {
   color: #fff;
   background-image: url(../img/1700x800.gif);
@@ -2777,21 +2793,24 @@ h2.highlight {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
 }
-#sidebar .searchwidget ::-webkit-input-placeholder {
+#sidebar .searchwidget::-webkit-input-placeholder {
   color: #676666;
 }
-#sidebar .searchwidget :-moz-placeholder {
+#sidebar .searchwidget:-moz-placeholder {
   /* FF 4-18 */
+  
   color: #676666;
   opacity: 1;
 }
-#sidebar .searchwidget ::-moz-placeholder {
+#sidebar .searchwidget::-moz-placeholder {
   /* FF 19+ */
+  
   color: #676666;
   opacity: 1;
 }
-#sidebar .searchwidget :-ms-input-placeholder {
+#sidebar .searchwidget:-ms-input-placeholder {
   /* IE 10+ */
+  
   color: #676666;
 }
 #sidebar .searchwidget input,
@@ -2975,6 +2994,7 @@ section#comments {
 /*------------------------------------------------------------------
 [8. Footer]
 ------------------------------------------------------------------*/
+
 #footer-1 {
   padding: 25px 0;
   fotn-size: 12px;
@@ -3002,6 +3022,7 @@ section#comments {
 /*------------------------------------------------------------------
 [9. Other]
 ------------------------------------------------------------------*/
+
 @media (max-width: 1200px) {
   #right-box {
     margin-left: 25% !important;
