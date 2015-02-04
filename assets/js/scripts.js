@@ -321,15 +321,9 @@ $(function() {
     });
   });
 
-  /* ============== COUNTDOWN ============== */
-  jQuery('.countdown').appear(function() {
-    $('span', this).countTo();
-  });
-
 
   /* ============== FIT VIDEOS ============== */
   jQuery('.fit').fitVids();
-
 
 
   /* ============== POST SLIDESHOW ============== */
