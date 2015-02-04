@@ -493,12 +493,4 @@ $(function() {
     return false;
   });
 
-
-
-
-
-
-
-
-
 });
