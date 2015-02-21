@@ -1723,6 +1723,7 @@ h2.highlight {
 .team-member:hover .team-info {
   top: 0 !important;
 }
+
 .team-member:hover img {
   top: -30px;
 }
@@ -3166,4 +3167,7 @@ section#comments {
   .tiles li {
     padding: 20px !important;
   }
+}
+.team-member a {
+  border-bottom: 1px dashed;
 }
